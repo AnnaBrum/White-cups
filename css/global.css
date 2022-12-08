@@ -12,15 +12,10 @@
   --color-klein-blue-hover: rgba(0, 0, 255, 0.5);
   --color-purple: rgba(100, 100, 255, 1);
   --color-pink-hover: rgba(255, 202, 202, 0.5);
+  --color-pink: rgba(255, 202, 202, 1);
 
   /* Font family */
   --font-family-base: "inter", Arial, sans-serif;
-}
-
-@font-face {
-  font-family: "inter";
-  src: local("inter"), url("/fonts/inter.woff2") format("woff2"),
-    url("/fonts/inter.woff") format("woff");
 }
 
 * {
@@ -32,14 +27,4 @@ body {
   font-family: var(--font-family-base);
   color: var(--color-klein-blue);
   margin: 0;
-}
-
-@media screen and (min-width: 768px) {
-  body {
-    padding: 2rem;
-  }
-}
-
-.hamburger-closed {
-  display: none;
 }

@@ -1,127 +1,167 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>WHITE CUPS</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
+    <link rel="stylesheet" href="./css/global.css" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="./css/typography.css" />
+  </head>
+  <body>
+    <!-- HAMBURGER MENU INVISIBLE UNTIL CLICKED-->
     <div class="hamburger-closed">
-        <div class="close-menu">
-            <img src="closemenu.svg" alt="close menu">
-        </div>
-        <ul class="menu-list">
-            <li class="menu-list-item">
-              <a href="/">PRODUCTS</a>
-            </li>
-            <li class="menu-list-item">
-              <a href="/">ABOUT US</a>
-            </li>
-            <li class="menu-list-item">
-              <a href="/">CART</a>
-            </li>
-        </ul>
-        <ul class="menu-list">
-            <li class="menu-list-item">
-              <a href="/">STORE LOCATOR</a>
-            </li>
-            <li class="menu-list-item">
-              <a href="/">DELIVERY INFORMATION</a>
-            </li>
-        </ul>
-        <ul class="menu-list">
-            <li class="menu-list-item">
-              <a href="/">PAYMENT</a>
-            </li>
-            <li class="menu-list-item">
-              <a href="/">RETURNS & REFUNDS</a>
-            </li>
-            <li class="menu-list-item">
-              <a href="/">CUSTOMER SERVICE</a>
-            </li>
-            <li class="menu-list-item">
-              <a href="/">CONTACT US</a>
-            </li>
-        </ul>
-
+      <div class="close-menu">
+        <img src="/images/close-menu.svg" alt="close menu" />
+      </div>
+      <ul class="menu-list">
+        <li class="menu-list-item">
+          <a href="/">PRODUCTS</a>
+        </li>
+        <li class="menu-list-item">
+          <a href="/">ABOUT US</a>
+        </li>
+        <li class="menu-list-item">
+          <a href="/">CART</a>
+        </li>
+      </ul>
+      <ul class="menu-list">
+        <li class="menu-list-item">
+          <a href="/">STORE LOCATOR</a>
+        </li>
+        <li class="menu-list-item">
+          <a href="/">DELIVERY INFORMATION</a>
+        </li>
+      </ul>
+      <ul class="menu-list">
+        <li class="menu-list-item">
+          <a href="/">PAYMENT</a>
+        </li>
+        <li class="menu-list-item">
+          <a href="/">RETURNS & REFUNDS</a>
+        </li>
+        <li class="menu-list-item">
+          <a href="/">CUSTOMER SERVICE</a>
+        </li>
+        <li class="menu-list-item">
+          <a href="/">CONTACT US</a>
+        </li>
+      </ul>
     </div>
+
     <header>
-        <nav>
-            <img src="hamburger" alt="hamburger-menu-icon">
-            <img src="logo" alt="white-cups logo">
-            <img src="search" alt="search-icon">
-        </nav>
-        <div class="hero">
-            <img src="" alt="hands modelling mug on throwing-wheel">
+      <!--MENU ICONS-->
+      <nav>
+        <div class="nav-logo">
+          <img src="/images/mobile_logo.png" alt="white-cups logo" />
         </div>
+        <div class="nav-icons">
+          <img src="images/Search.svg" alt="search-icon" />
+          <img src="images/cart.svg" alt="search-icon" />
+          <img src="/images/hamburgerMenu.svg" alt="hamburger-menu-icon" />
+        </div>
+      </nav>
     </header>
+
     <main>
-        <div class="read-more">
-            <p>For your white cup-needs we bring you our minimalistic designs of mugs - complete in it's functionality. </p>
-            <button class="btn-read-more">
-                READ MORE
-            </button>
+      <!-- HERO- SECTION -->
+      <div class="hero">
+        <img
+          src="/images/hero_mobile.png"
+          alt="hands modelling mug on throwing-wheel"
+        />
+        <div class="offer-container">
+          <div class="offer-circle">
+          <p>Free shipping and 20% OFF when ordering 10+ cups</p>
         </div>
+        <button class="btn-read-more">GO TO OFFER</button>
+      </div>
 
+      <!-- PRODUCTS-SECTION -->
+      <div class="products">
+        <h2>products</h2>
         <div class="scrolling-wrapper">
-                <div class="card">
-                    <img src="" alt="product-image">
-                </div>
-                <div class="card">
-                    <img src="" alt="product-image">
-                </div>
-                <div class="card">
-                    <img src="" alt="product-image">
-                </div>
-                <div class="card">
-                    <img src="" alt="product-image">
-                </div>
-                <div class="card">
-                    <img src="" alt="product-image">
-                </div>
-                <div class="card">
-                    <img src="" alt="product-image">
-                </div>
-                <div class="card">
-                    <img src="" alt="product-image">
-                </div>
-                <div class="card">
-                    <img src="" alt="product-image">
-                </div>
+          <div class="card">
+            <img src="/images/White-Mug-png 1-min.png" alt="product-image" />
+          </div>
+          <div class="card-text">
+            <p class="product-description">CUP NO.1</p>
+            <p class="product-price">50 SEK</p>
+          </div>
+          <div class="card">
+            <img src="/images/White-Mug-png 1-min.png" alt="product-image" />
+          </div>
+          <p class="product-description">CUP NO.1</p>
+          <p class="product-price">50 SEK</p>
+          <div class="card">
+            <img src="/images/White-Mug-png 1-min.png" alt="product-image" />
+          </div>
+          <p class="product-description">CUP NO.1</p>
+          <p class="product-price">50 SEK</p>
+          <div class="card">
+            <img src="/images/White-Mug-png 1-min.png" alt="product-image" />
+          </div>
+          <p class="product-description">CUP NO.1</p>
+          <p class="product-price">50 SEK</p>
+          <div class="card">
+            <img src="/images/White-Mug-png 1-min.png" alt="product-image" />
+          </div>
+          <p class="product-description">CUP NO.1</p>
+          <p class="product-price">50 SEK</p>
+          <div class="card">
+            <img src="/images/White-Mug-png 1-min.png" alt="product-image" />
+          </div>
+          <p class="product-description">CUP NO.1</p>
+          <p class="product-price">50 SEK</p>
+          <div class="card">
+            <img src="/images/White-Mug-png 1-min.png" alt="product-image" />
+          </div>
+          <p class="product-description">CUP NO.1</p>
+          <p class="product-price">50 SEK</p>
+          <div class="card">
+            <img src="/images/White-Mug-png 1-min.png" alt="product-image" />
+          </div>
         </div>
-
-        <div class="offer">
-            <p>Free shipping and 20% OFF when ordering 10+ cups </p>
-            <button class="btn-go-to-offer">
-                GO TO OFFER
-            </button>
+      </div>
+      <!-- ABOUT US-SECTION -->
+      <div class="about-us">
+        <h2>about us</h2>
+        <p>
+          For your white cup-needs we bring you our minimalistic designs of mugs
+          - complete in it's functionality.
+        </p>
+        <button class="btn-read-more">READ MORE</button>
+        <div class="about-us-image">
+          <img src="/images/image 10aboutus_mobile.png" />
         </div>
-
-        <footer>
-            <ul class="footer-links">
-                <li>Contact Us</li>
-                <li>Store Locator</li>
-                <li>Customer Service</li>
-                <li>Delivery Information</li>
-                <li>Returns & Refunds</li>
-                <li>Payment</li>
-            </ul>
-            <ul class="footer-social">
-                <li>Facebook</li>
-                <li>Pinterest</li>
-                <li>Instagram</li>
-            </ul>
-            <div class="logo-footer">
-                <img src="" alt="">
-            </div>
-            <p class="copyright">
-                Copyright &copy; 2022 White Cups SWE
-            </p>
-        </footer>
+        <div class="about-us-quote">
+          <p class="quote">
+            “Traditionally handmade stoneware with smooth ceramic glaze. These
+            cups are made with love and care by our artisans.”
+          </p>
+        </div>
+      </div>
+      <!-- FOOTER-SECTION -->
+      <footer>
+        <ul class="footer-links">
+          <li>Contact Us</li>
+          <li>Store Locator</li>
+          <li>Customer Service</li>
+          <li>Delivery Information</li>
+          <li>Returns & Refunds</li>
+          <li>Payment</li>
+        </ul>
+        <ul class="footer-social">
+          <li>Facebook</li>
+          <li>Pinterest</li>
+          <li>Instagram</li>
+        </ul>
+        <div class="logo-footer">
+          <img src="/images/mobile_logo.png" alt="logo" />
+        </div>
+        <p class="copyright">Copyright &copy; 2022 White Cups SWE</p>
+      </footer>
     </main>
-    
-    
-</body>
+  </body>
 </html>

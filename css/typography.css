@@ -3,3 +3,11 @@
   src: local("inter"), url("/fonts/inter.woff2") format("woff2"),
     url("/fonts/inter.woff") format("woff");
 }
+
+h2 {
+  font-size: 40px;
+}
+
+.product-price {
+  font-weight: bold;
+}

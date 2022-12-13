@@ -2,6 +2,9 @@
   body {
     padding: 2rem;
   }
+  hr {
+    display: none;
+  }
 }
 
 .hamburger-closed {

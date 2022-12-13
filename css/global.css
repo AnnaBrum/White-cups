@@ -18,7 +18,6 @@
   --font-family-base: "inter", Arial, sans-serif;
 }
 
-<<<<<<< Updated upstream
 * {
   box-sizing: border-box;
 }
@@ -28,10 +27,4 @@ body {
   font-family: var(--font-family-base);
   color: var(--color-klein-blue);
   margin: 0;
-=======
-@font-face {
-  font-family: "inter";
-  src: local("inter"), url("/fonts/inter.woff2") format("woff2"),
-    url("/fonts/inter.woff") format("woff");
->>>>>>> Stashed changes
 }

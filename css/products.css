@@ -47,3 +47,7 @@
 .product-description {
   justify-self: flex-start;
 }
+
+.products-quote {
+  display: none;
+}

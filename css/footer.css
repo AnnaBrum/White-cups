@@ -1,3 +1,7 @@
+footer {
+  margin-bottom: 0px;
+}
+
 .links-wrapper {
   display: flex;
   flex-direction: column;
@@ -22,4 +26,5 @@ li {
 
 p.copyright {
   font-size: 15px;
+  color: darkgray;
 }

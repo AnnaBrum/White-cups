@@ -11,20 +11,14 @@
     font-size: 100px;
   }
 
-  .offer-circle {
-    background-color: var(--color-klein-blue);
-    width: 40vw;
-    height: 40vw;
-    padding: 6rem;
-  }
-
-  .offer-container p {
-    font-size: 2.5rem;
-  }
-
   section {
     border: solid 2px var(--color-klein-blue);
     border-radius: 10px;
+  }
+
+  .hero-wrapper {
+    width:100%;
+    overflow: hidden;
   }
 
   .section-header {
@@ -48,35 +42,34 @@
     border-bottom: solid 2px var(--color-klein-blue);
   }
 
+  .offer-circle {
+    background-color: var(--color-klein-blue);
+    z-index: -3;
+    padding: 4rem;
+  }
+
+  .offer-container p {
+    font-size: 2rem;
+  }
+
   .scrolling-wrapper {
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(2, 1fr);
   }
 
-  .about-us p {
-    width: 30%;
-    margin-left: 74px;
+  .about-us-image {
+    width:100%;
+    height: 750px;
+    justify-content: center;
+    overflow: hidden;
   }
 
   .about-us-image img {
     width: 100%;
     height: 100%;
-    object-fit: contain;
-    border-radius: 0 0 10px 10px;
+    object-fit: cover;
   }
 
-  .hero-wrapper img {
-    width: 100%;
-    height: 100%;
-    object-fit: contain;
-  }
-
-  .hero .btn-read-more {
-    position: absolute;
-    right: 260px;
-    bottom: 200px;
-    z-index: 4;
-  }
   .btn-read-more-mobile {
     display: none;
   }
@@ -92,29 +85,6 @@
     font-family: "Inter-bold";
     letter-spacing: 0.1rem;
     font-size: var(--btn);
-  }
-
-  .about-us .btn-read-more-desktop {
-    margin-left: 74px;
-  }
-
-  .quote-circle {
-    width: 40vw;
-    height: 40vw;
-    position: absolute;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 4rem;
-    top: 60px;
-    right: 170px;
-  }
-
-  p.quote {
-    text-align: center;
-    letter-spacing: 5%;
-    width: auto;
-    margin: auto;
   }
 
   .links-wrapper {
@@ -143,10 +113,56 @@
     margin-top: 10px;
   }
 
-  .copyright {
+}
+@media screen and (min-width: 1040px) {
+  .offer-circle {
+    width: 40vw;
+    height: 40vw;
+  }
+
+  .offer-container p {
+    font-size: 2rem;
+  }
+
+  .hero .btn-read-more {
+    position: absolute;
+    right: 260px;
+    bottom: 200px;
+    z-index: 4;
+  }
+
+  .about-us p {
+    width: 30%;
+    margin-left: 74px;
+  }
+
+  .about-us .btn-read-more-desktop {
+    margin-left: 74px;
+  }
+
+  .quote-circle {
+    width: 40vw;
+    height: 40vw;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 4rem;
+    top: 60px;
+    right: 170px;
+  }
+
+  p.quote {
     text-align: center;
-    display: block;
-    bottom: 0px;
-    margin-bottom: 1rem;
+    letter-spacing: 5%;
+    width: auto;
+    margin: auto;
+  }
+
+}
+
+@media screen and (min-width: 1300px) {
+  .offer-container p {
+    font-size: 3rem;
   }
 }

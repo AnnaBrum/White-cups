@@ -19,8 +19,8 @@
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  width: 350px;
-  height: 542px;
+  width: 346px;
+  height: 500px;
 }
 
 .mug-wrapper {
@@ -40,6 +40,7 @@
 }
 
 .product-price {
+  font-family: 'Inter-bold';
   text-align: right;
 }
 
@@ -52,5 +53,5 @@
 }
 
 .card-text p {
-  margin: 2rem 0 0 0;
+  margin: 0rem 0rem 2rem 0rem;
 }

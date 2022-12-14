@@ -27,13 +27,12 @@ body {
 .hero-wrapper img {
   width: 100%;
   height: 100%;
-  object-fit: fill;
+  object-fit: cover;
+  overflow: hidden;
 }
 
 .about-us-image img {
-  width: 100%;
-  height: 100%;
-  object-fit: fill;
+  object-fit: contain;
 }
 
 .section-header {
@@ -72,6 +71,7 @@ body {
 }
 .btn-read-more-desktop {
   display: none;
+  background-color: var(--color-pink);
 }
 
 .btn-read-more-mobile {
@@ -126,8 +126,17 @@ p {
   height: 24rem;
   border-radius: 50%;
   margin-top: 3rem;
+  margin-bottom: 3rem;
+  align-self: center;
 }
 
 .hidden {
   display: none;
+}
+
+.copyright {
+  text-align: center;
+  display: block;
+  bottom: 0px;
+  margin-bottom: 1rem;
 }

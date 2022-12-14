@@ -1,8 +1,9 @@
 const body = document.querySelector("body");
 const aboutUsImage = document.querySelector(".about-us-image img");
 const logoFooter = document.querySelector(".logo-footer img");
+const hamburgerDiv = document.querySelector(".hamburger");
 
-console.log(logoFooter.src);
+console.log(hamburgerDiv.classList);
 
 // Create a media condition that targets viewports at least 768px wide
 

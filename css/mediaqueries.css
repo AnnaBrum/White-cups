@@ -11,7 +11,6 @@
     width: 40vw;
     height: 40vw;
     padding: 6rem;
-    align-items: flex-start;
   }
 
   .offer-container p {
@@ -58,5 +57,21 @@
     right: 260px;
     bottom: 200px;
     z-index: 4;
+  }
+  .btn-read-more-mobile {
+    display: none;
+  }
+
+  .btn-read-more-desktop {
+    display: inline;
+    width: 12rem;
+    height: 3.75rem;
+    background-color: var(--color-pink);
+    border: none;
+    color: var(--color-klein-blue);
+    margin: 2rem;
+    font-family: "Inter-bold";
+    letter-spacing: 0.1rem;
+    font-size: var(--btn);
   }
 }

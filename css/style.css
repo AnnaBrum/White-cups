@@ -29,6 +29,12 @@ body {
   object-fit: fill;
 }
 
+.about-us-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: fill;
+}
+
 .section-header {
   border-top: solid 2px var(--color-klein-blue);
   border-bottom: solid 2px var(--color-klein-blue);
@@ -48,6 +54,7 @@ body {
 }
 .offer-circle {
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   text-align: center;
@@ -62,7 +69,11 @@ body {
   position: absolute;
   align-items: center;
 }
-.btn-read-more {
+.btn-read-more-desktop {
+  display: none;
+}
+
+.btn-read-more-mobile {
   width: 12rem;
   height: 3.75rem;
   background-color: var(--color-pink);

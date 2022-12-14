@@ -2,14 +2,14 @@
   display: flex;
   flex-direction: column;
   width: 100%;
-  margin-top: 80px;
+  margin-top: 2rem;
 }
 
 .scrolling-wrapper {
   display: grid;
   grid-template-columns: repeat(6, 1fr);
   grid-template-rows: 1fr;
-  width: 100%;
+  width: 85%;
   overflow-x: auto;
   overscroll-behavior-inline: contain;
   column-gap: 5%;
@@ -46,15 +46,4 @@
 
 .product-description {
   justify-self: flex-start;
-}
-
-.products h2 {
-  margin: 10px 0 10px 25px;
-}
-
-@media screen and (min-width: 768px) {
-  .scrolling-wrapper {
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(2, 1fr);
-  }
 }

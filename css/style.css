@@ -33,6 +33,7 @@ body {
 
 .about-us-image img {
   object-fit: contain;
+  width: 100%;
 }
 
 .section-header {
@@ -64,14 +65,22 @@ body {
   opacity: 70%;
   border-radius: 50%;
   padding: 1rem;
+  transition: ease 0.5s;
 }
+
+.offer-circle:hover {
+  opacity: 100%;
+}
+
 .offer-text {
   position: absolute;
   align-items: center;
 }
+
 .btn-read-more-desktop {
   display: none;
   background-color: var(--color-pink);
+  transition: ease 0.2s;
 }
 
 .btn-read-more-mobile {
@@ -84,10 +93,6 @@ body {
   font-family: "Inter-bold";
   letter-spacing: 0.1rem;
   font-size: var(--btn);
-}
-
-.btn-read-more:hover {
-  background-color: var(--color-pink-hover);
 }
 
 main {
@@ -132,6 +137,7 @@ p {
 
 .hidden {
   display: none;
+  transition: ease 0.4;
 }
 
 .copyright {
@@ -139,4 +145,98 @@ p {
   display: block;
   bottom: 0px;
   margin-bottom: 1rem;
+}
+
+.hamburger {
+  display: flex;
+  position: absolute;
+  background: white;
+  flex-direction: column;
+  z-index: 9;
+  width: 100%;
+  padding: 10px;
+  border: 2px solid var(--color-klein-blue);
+  transition: ease-in-out 0.6s;
+  margin-top: 100px;
+  border-radius: 4px;
+}
+.hamburger.hidden {
+  /* display: none; */
+  transform: translateY(-1000px);
+  z-index: 0;
+}
+
+.hamburger a {
+  transition: ease 0.2s;
+  text-decoration: none;
+  color: var(--color-klein-blue);
+}
+
+.hamburger a:active {
+  color: var(--color-purple);
+}
+.hamburger a:hover {
+  transition: ease 0.2s;
+  text-decoration: underline;
+  color: var(--color-purple);
+}
+
+.close-menu img:hover {
+  transition: ease 0.3s;
+  transform: scaleX(1.4);
+  transform: scaleY(1.2);
+}
+
+.close-menu {
+  transition: ease 0.3s;
+  margin-left: 330px;
+}
+
+.close-menu img {
+  width: 20px;
+}
+
+.nav-icons {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav-icons img:hover {
+  transition: ease 0.3s;
+  transform: scaleX(1.2);
+  transform: scaleY(1.1);
+}
+
+.nav-icons img {
+  width: 50px;
+  transition: ease 0.5s;
+}
+
+.nav-icons :nth-child(2) {
+  width: 40px;
+}
+
+.nav-icons img:active {
+  opacity: 20%;
+}
+
+.close-menu {
+  margin-top: 20px;
+}
+
+.card:nth-child(2) .mug-wrapper {
+  background-color: #f56e8e;
+}
+.card:nth-child(3) .mug-wrapper {
+  background-color: #ffdf73;
+}
+.card:nth-child(4) .mug-wrapper {
+  background-color: #4fe8b4;
+}
+.card:nth-child(5) .mug-wrapper {
+  background-color: #ecebe3;
+}
+.card:nth-child(6) .mug-wrapper {
+  background-color: #ff9f2d;
 }

@@ -19,7 +19,8 @@ li {
   margin: 1rem;
 }
 
-.logo-footer {
+.logo-footer img {
+  width: 170px;
   margin-top: 2rem;
   margin-bottom: 2rem;
 }
@@ -27,4 +28,10 @@ li {
 p.copyright {
   font-size: 15px;
   color: darkgray;
+}
+
+li:hover {
+  transition: ease 0.2s;
+  text-decoration: underline;
+  color: var(--color-purple);
 }

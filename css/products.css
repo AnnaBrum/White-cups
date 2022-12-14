@@ -12,7 +12,7 @@
   overflow-x: auto;
   overscroll-behavior-inline: contain;
   column-gap: 5%;
-  margin: 5% 5%;
+  margin: 5% 0 0 5%;
 }
 
 .card {
@@ -40,7 +40,7 @@
 }
 
 .product-price {
-  font-family: 'Inter-bold';
+  font-family: "Inter-bold";
   text-align: right;
 }
 
@@ -50,6 +50,7 @@
 
 .products-quote {
   display: none;
+  font-size: 30px;
 }
 
 .card-text p {

@@ -2,7 +2,40 @@
   body {
     padding: 2rem;
     padding-bottom: 0rem;
+    overflow-x: hidden;
   }
+
+  .logo-footer img {
+    width: auto;
+  }
+
+  .hamburger {
+    padding: 40px;
+    display: flex;
+    position: absolute;
+    background: white;
+    flex-direction: column;
+    z-index: 9;
+    right: 18px;
+    top: 8.4rem;
+    width: auto;
+    margin-top: auto;
+    flex-basis: content;
+    border: 2px solid var(--color-klein-blue);
+    border-radius: 0 0 0 10px;
+    transition: ease 0.4s;
+  }
+  .hamburger.hidden {
+    /* display: none; */
+    transform: translateX(600px);
+    z-index: 0;
+  }
+
+  .close-menu {
+    transition: ease 0.3s;
+    margin-left: 190px;
+  }
+
   hr {
     display: none;
   }
@@ -17,7 +50,7 @@
   }
 
   .hero-wrapper {
-    width:100%;
+    width: 100%;
     overflow: hidden;
   }
 
@@ -31,6 +64,8 @@
   .products-quote {
     display: inline-block;
     font-style: italic;
+    font-size: 2.5rem;
+    margin: 0;
   }
 
   header {
@@ -58,7 +93,7 @@
   }
 
   .about-us-image {
-    width:100%;
+    width: 100%;
     height: 750px;
     justify-content: center;
     overflow: hidden;
@@ -87,6 +122,23 @@
     font-size: var(--btn);
   }
 
+  .offer-circle button:hover {
+    box-shadow: var(--color-purple) 5px 10px;
+  }
+  .offer-circle.btn-read-more-desktop:active {
+    box-shadow: var(--color-purple) 5px 10px;
+  }
+
+  .btn-read-more-desktop:hover {
+    background-color: var(--color-pink-hover);
+  }
+  .btn-read-more-mobile:active {
+    box-shadow: var(--color-klein-blue) 5px 10px;
+  }
+  .btn-read-more-desktop:active {
+    box-shadow: var(--color-klein-blue) 5px 10px;
+  }
+
   .links-wrapper {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
@@ -113,6 +165,17 @@
     margin-top: 10px;
   }
 
+  .nav-logo {
+    margin-left: 6%;
+  }
+
+  .nav-icons {
+    width: 15%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-right: 2%;
+  }
 }
 @media screen and (min-width: 1040px) {
   .offer-circle {
@@ -141,24 +204,23 @@
   }
 
   .quote-circle {
-    width: 40vw;
-    height: 40vw;
+    width: 35vw;
+    height: 35vw;
     position: absolute;
     display: flex;
     justify-content: center;
     align-items: center;
     padding: 4rem;
-    top: 60px;
+    top: 180px;
     right: 170px;
   }
 
   p.quote {
     text-align: center;
-    letter-spacing: 5%;
+    letter-spacing: 1px;
     width: auto;
-    margin: auto;
+    margin-left: auto;
   }
-
 }
 
 @media screen and (min-width: 1300px) {

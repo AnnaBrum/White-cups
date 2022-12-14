@@ -7,6 +7,7 @@
   }
 
   .offer-circle {
+    background-color: var(--color-klein-blue);
     width: 40vw;
     height: 40vw;
     padding: 6rem;
@@ -54,8 +55,8 @@
 
   .hero .btn-read-more {
     position: absolute;
-    right: 20%;
-    bottom: 8%;
+    right: 260px;
+    bottom: 200px;
     z-index: 4;
   }
 }

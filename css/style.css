@@ -23,11 +23,11 @@ body {
   justify-content: center;
   align-items: center;
 }
-/* .hero-wrapper img {
+.hero-wrapper img {
   width: 100%;
   height: 100%;
-  object-fit: contain;
-} */
+  object-fit: fill;
+}
 
 .section-header {
   border-top: solid 2px var(--color-klein-blue);
@@ -51,8 +51,8 @@ body {
   justify-content: center;
   align-items: center;
   text-align: center;
-  width: 60vw;
-  height: 60vw;
+  width: 50vw;
+  height: 50vw;
   background-color: var(--color-purple);
   opacity: 70%;
   border-radius: 50%;
@@ -91,6 +91,13 @@ h2 {
 p {
   font-size: var(--p);
   margin: 2rem;
+}
+
+.about-us {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  margin-top: 2rem;
 }
 
 .quote {

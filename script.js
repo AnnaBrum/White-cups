@@ -12,11 +12,12 @@ hamburgerIcon.addEventListener("click", (event) => {
     hamburgerDiv.classList.remove("hidden");
   } else hamburgerDiv.classList.add("hidden");
 });
-hamburgerIcon.addEventListener("click", (event) => {
-  if (hamburgerDiv.classList.contains("hidden")) {
-    hamburgerDiv.classList.remove("hidden");
-  } else hamburgerDiv.classList.add("hidden");
-});
+
+// hamburgerIcon.addEventListener("click", (event) => {
+//   if (hamburgerDiv.classList.contains("hidden")) {
+//     hamburgerDiv.classList.remove("hidden");
+//   } else hamburgerDiv.classList.add("hidden");
+// });
 
 // Create a media condition that targets viewports at least 768px wide
 

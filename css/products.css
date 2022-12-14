@@ -9,7 +9,6 @@
   display: grid;
   grid-template-columns: repeat(6, 1fr);
   grid-template-rows: 1fr;
-  width: 85%;
   overflow-x: auto;
   overscroll-behavior-inline: contain;
   column-gap: 5%;
@@ -50,4 +49,8 @@
 
 .products-quote {
   display: none;
+}
+
+.card-text p {
+  margin: 2rem 0 0 0;
 }

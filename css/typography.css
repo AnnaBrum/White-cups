@@ -10,3 +10,6 @@
     url("/fonts/Inter-Bold.woff") format("woff");
   font-weight: bold;
 }
+p {
+  letter-spacing: 5%;
+}

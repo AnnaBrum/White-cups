@@ -1,3 +1,6 @@
+* {
+  box-sizing: border-box;
+}
 
 body {
     width: 100vw;
@@ -5,6 +8,7 @@ body {
     font-family: var(--font-family-base);
     color: var(--color-klein-blue);
     margin: 0;
+    padding: 0;
   }
 
 nav {
@@ -15,9 +19,15 @@ nav {
     padding: 1rem;
 }
 .hero {
-    width: 100vw;
-    position: relative;
-    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+}
+.hero-wrapper {
+  display: flex;
+  position: relative;
+  justify-content: center;
 }
 /* --- OFFER --- */
 .offer-container {
@@ -34,19 +44,19 @@ nav {
 }
 .offer-circle {
     display: flex;
-    position: relative;
     justify-content: center;
     align-items: center;
     text-align: center;
-    width: 50vw;
-    height: 50vw;
+    width: 60vw;
+    height: 60vw;
     background-color: var(--color-purple);
     opacity: 70%;
     border-radius: 50%;
-    padding: 2rem;
+    padding: 1rem;
 }
 .offer-text {
     position: absolute;
+    align-items: center;
 }
 .btn-read-more {
   width: 12rem;
@@ -54,13 +64,49 @@ nav {
   background-color: var(--color-pink);
   border: none;
   color: var(--color-klein-blue);
+  margin: 2rem;
+  font-family: "Inter-bold";
+  letter-spacing: 0.1rem;
+  font-size: var(--btn);
 }
+
 main {
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
+.section-div {
+  border-top: 0.1rem solid var(--color-klein-blue);
+  border-bottom:0.1rem solid var(--color-klein-blue);
+  width: 100vw;
+  padding: 1rem 2rem 1rem 2rem;
+}
+
+h2 {
+  font-family: "Inter-bold";
+  font-size: var(--h2-mobile);
+  margin:0;
+}
+p {
+  font-size: var(--p);
+  margin: 2rem;
+}
+
+.quote {
+  font-size: var(--p-quote);
+  font-style: italic;
+  text-align: center;
+}
+.quote-circle {
+  display: flex;
+  justify-content: center;
+  background-color: var(--color-pink);
+  width: 24rem;
+  height: 24rem;
+  border-radius: 50%;
+  margin: auto;
+}
 /* --- MEDIA SCREENS --- */
   @media screen and (min-width: 768px) {
     body {
